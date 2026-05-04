@@ -1,0 +1,19 @@
+image: ubuntu:22.04
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  before_script:
+    - apt-get update && apt-get install -y curl
+    - curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb
+    - apt-get install -y ./quarto-linux-amd64.deb
+  script:
+    - quarto render
+    - mv _site public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
