@@ -1,0 +1,11 @@
+---
+title: "Publications"
+bibliography: references.bib
+csl: apa.csl
+nocite: '@*'
+---
+
+For the latest list, see [Lirias](https://lirias.kuleuven.be/cv?Username=u0093798) · [Google Scholar](https://scholar.google.com/citations?user=4wF-Y68AAAAJ&hl=en).
+
+::: {#refs}
+:::

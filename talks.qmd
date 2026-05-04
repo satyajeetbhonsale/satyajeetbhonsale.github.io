@@ -1,0 +1,17 @@
+---
+title: "Talks & Presentations"
+---
+
+## Keynote Talks
+
+### SciML for Biosystems
+**FoodSIM 2026**
+
+[📄 Slides](assets/foodsim.pdf){.btn .btn-outline-primary .btn-sm}
+
+---
+
+### Uncertainty: Its Quantification, Mitigation, Propagation and Decision Making
+**FIND4S Capacity Building Programme** · Indonesia, 2025
+
+{{< video https://www.youtube.com/watch?v=fgrXlxH3PPY start="1260" >}}

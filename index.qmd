@@ -1,0 +1,40 @@
+---
+title: ""
+page-layout: full
+bibliography: references.bib
+csl: apa.csl
+nocite: '@*'
+toc: false
+---
+
+::: {.column-page}
+
+:::: {style="display: flex; gap: 2.5rem; align-items: flex-start; padding: 2rem 0;"}
+
+::::: {style="flex: 0 0 auto;"}
+![](assets/ME.jpg){width=200 style="border-radius: 50%;"}
+:::::
+
+::::: {style="flex: 1;"}
+# Satyajeet Bhonsale
+
+**Postdoctoral Researcher**  
+BioTeC+, KU Leuven, Belgium
+
+I develop uncertainty-aware mathematical models and scientific machine learning methods
+for (bio)pharmaceutical processes. My work is guided by a simple question *how can we make reliable decisions using models we know are wrong?*
+Drawing on mechanistic modelling, uncertainty quantification, and hybrid SciML approaches,
+I build computational tools that are not just predictive, but credible for real-world
+decision-making in pharmaceutical and bioprocess engineering.
+:::::
+
+::::
+
+:::
+
+## Publications
+
+For the latest list see [Lirias](https://lirias.kuleuven.be/cv?Username=u0093798) · [Google Scholar](https://scholar.google.com/citations?user=4wF-Y68AAAAJ&hl=en).
+
+::: {#refs}
+:::

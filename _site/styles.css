@@ -1,0 +1,8 @@
+/* css styles */
+.table {
+  border-top: none;
+}
+
+table thead tr:first-child th {
+  border-top: none;
+}

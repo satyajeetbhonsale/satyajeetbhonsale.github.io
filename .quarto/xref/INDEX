@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "077f6fb0"
+  },
+  "about.qmd": {
+    "about.html": "47f7aaae"
+  },
+  "publications.qmd": {
+    "publications.html": "909fac9e"
+  },
+  "talks.qmd": {
+    "talks.html": "0335de5a"
+  },
+  "cv.qmd": {
+    "cv.html": "26f1f641"
+  },
+  "research/bioprocesses.qmd": {
+    "bioprocesses.html": "6610cd45"
+  },
+  "research/sciml.qmd": {
+    "sciml.html": "17bc4ed8"
+  },
+  "research/uncertainty.qmd": {
+    "uncertainty.html": "c4883499"
+  }
+}

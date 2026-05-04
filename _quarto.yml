@@ -1,0 +1,45 @@
+project:
+  type: website
+
+website:
+  title: "Satyajeet Bhonsale"
+  description: "Postdoctoral Researcher | Bioprocess Modelling · Uncertainty Quantification · Scientific ML"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Research
+        menu:
+          - href: research/bioprocesses.qmd
+            text: Bioprocess Modelling
+          - href: research/uncertainty.qmd
+            text: Uncertainty Quantification
+          - href: research/sciml.qmd
+            text: Scientific ML
+      - href: talks.qmd
+        text: Talks
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: gitlab
+        href: https://gitlab.kuleuven.be/u0093798
+        aria-label: GitLab
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=4wF-Y68AAAAJ&hl=en
+        aria-label: Google Scholar
+  page-footer:
+    center: "© 2026 Satyajeet Bhonsale · Built with [Quarto](https://quarto.org)"
+
+  open-graph: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+bibliography: references.bib
+

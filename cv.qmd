@@ -1,0 +1,110 @@
+---
+title: "Curriculum Vitae"
+toc: true
+toc-depth: 2
+---
+
+[📄 Download PDF](assets/cv.pdf){.btn .btn-primary .btn-sm}
+
+
+## Education
+
+| Year | Degree | Institution |
+|------|--------|-------------|
+| 2015–2020 | PhD in Chemical Engineering | KU Leuven, Belgium |
+| 2013–2015 | MSc in Chemical Engineering | KU Leuven, Belgium |
+| 2009–2013 | BTech in Chemical Engineering| Dr. Babasaheb Ambedkar Technological University, Lonere, India |
+
+**PhD thesis:** Numerical methods for predictive milling of Active Pharmaceutical Ingredients: Modelling of spiral jet mills  
+**Supervisors:** Prof. Jan Van Impe (KU Leuven), Bard Stokbroekx (Janssen Pharmaceutica)
+
+## Academic Appointments
+
+| Period | Role | Institution |
+|--------|------|-------------|
+| Jan 2020 – present | Postdoctoral Researcher | BioTeC+, KU Leuven, Belgium |
+| Apr 2024 – Aug 2024 | Visiting Researcher | Universitat Politècnica de València, Spain |
+| Mar 2016 – Feb 2020 | PhD Scientist (VLAIO Baekeland Mandate) | Janssen Pharmaceutica, Belgium |
+| Jun 2018 – Dec 2018 | Visiting Researcher | University of Leeds, UK |
+| Oct 2015 – Feb 2016 | Doctoral Researcher | KU Leuven, Belgium |
+
+
+## Grants & Awards
+
+**As (Co-)Principal Investigator**
+
+- FWO Research Project G0A9H26N — *μ4C: Managing Uncertainty and Complexity for Cybergenetic Predictive Control of Sustainable Bioprocesses* · €630,000 · Computational co-PI · Awarded Dec 2025
+
+**Personal Mobility & Travel Grants**
+
+- FWO International Mobility Grant — Universitat Politècnica de València, Spain (Apr–Aug 2024)
+- FWO Travel Grant — Foundations of Systems Biology & Engineering (FOSBE), Boston, USA (Aug 2022)
+- VLAIO Baekeland Mandate — Industrial PhD with Janssen Pharmaceutica (2016–2020)
+
+
+
+## Publications
+
+24 peer-reviewed articles · h-index 8 (WoS) / 12 (Google Scholar) · 198 citations (WoS) / 324 (Google Scholar)  
+*(as of April 2026)*
+
+→ [Full publication list](index.qmd#publications) · 
+[Lirias](https://lirias.kuleuven.be/cv?Username=u0093798) · 
+[Google Scholar](https://scholar.google.com/citations?user=4wF-Y68AAAAJ&hl=en)
+
+## Research Supervision
+
+**Doctoral Candidates (Co-Supervised)**
+
+| Candidate | Topic | Funding | Status |
+|-----------|-------|---------|--------|
+| Lydia Katsini | Modelling effect of climate change in food safety | MSCA-ITN PROTECT | Defended 2025 |
+| Gustavo Lunardon Quillo | Modelling and control of crystallisation | VLAIO Baekeland | Defended 2026 |
+| Pau Lapiedra Carrasquer | Data-driven modelling of continuous manufacturing | VLAIO Baekeland | Ongoing |
+| Wannes Mores | Metabolic network reduction for bioprocess optimisation | FWO | Ongoing |
+| Jian Wang | Biology-driven complexity reduction of individual-based models | MSCA-ITN E-MUSE | Ongoing |
+| Francisca Pizarro Galleguillos | Risk-averse optimisation of multiscale models | MSCA-DN FAIROmics | Ongoing |
+| Stylianos Floros | Modelling microbial community in human gut | FWO | Ongoing |
+| Pratham Kapavarapu | Designing optogenetic control systems for cyanobacteria | KU Leuven | Ongoing |
+
+**Master's Students**
+
+\>20 MSc theses (co-)supervised across KU Leuven (Bio)chemical Engineering and Erasmus Mundus Food4S programmes.
+
+
+
+## Teaching
+
+**Courses**
+
+| Period | Course | Programme |
+|--------|--------|-----------|
+| 2020 – present | Computational Food Science, Technology & Engineering: Fundamentals (B-KUL-JPI1A6) | Erasmus Mundus Food4S, KU Leuven |
+| 2020 – present | Computational Food Science, Technology & Engineering: Supplements (B-KUL-JPI0VO) | Erasmus Mundus Food4S, KU Leuven |
+| 2018 – 2020 | Systems Analysis and Process Control (B-KUL-JPI0TM) | Multi-campus MSc, KU Leuven |
+| 2017 – 2020 | Parameter Estimation in Predictive Microbiology | Erasmus Mundus Food4S |
+
+**Summer & Winter Schools**
+
+- Reinforcement Learning — EU H2020 MSCA-ITN E-Muse Winter School, University of Szeged, Hungary (Nov 2023)
+- Model-based Optimal Experiment Design and Process Control — EU H2020 MSCA-ITN E-Muse Summer School (Jul 2023)
+- Computation Techniques in Predictive Microbiology — EU H2020 MSCA-ITN PROTECT Winter School, University of Malta (Jan 2020)
+
+
+## Invited Talks & Keynotes
+
+- *Scientific Machine Learning for Biological Systems* · FoodSIM 2026, KU Leuven (Apr 2026)
+- *Uncertainty: Its Quantification, Mitigation, Propagation and Decision Making* · Industrial Simulation Conference, Universitat Politècnica de València (Jun 2024)
+
+
+## Academic Service
+
+**Conference Organisation**
+
+- Co-Chair, Local Organising Committee — ESCAPE 35, Ghent (Jul 2025, ~730 participants). Managed abstract/paper review and ranking; oversaw on-site logistics; co-edited proceedings (423 full papers, PSE Press; 140 short papers, EUROSIS).
+- Local Organising Committee — FoodSIM 2020, 2022, 2024, 2026
+- International Scientific Committee — FoodSim, Industrial Simulation Conference, ESCAPE, MATHMOD
+
+**Peer Review**
+
+Regular reviewer for: IEEE Transactions on Automatic Control · Powder Technology · Computers & Chemical Engineering · Chemical Engineering Science · Bioinformatics · Fermentation · Frontiers in Chemical Engineering · Biochemical Engineering Journal · Processes
