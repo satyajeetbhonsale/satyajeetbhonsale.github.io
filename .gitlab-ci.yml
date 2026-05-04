@@ -6,8 +6,8 @@ stages:
 pages:
   stage: deploy
   before_script:
-    - apt-get update && apt-get install -y curl
-    - curl -LO https://quarto.org/download/latest/quarto-linux-amd64.deb
+    - apt-get update -o Acquire::Retries=3 && apt-get install -y wget
+    - wget -q https://quarto.org/download/latest/quarto-linux-amd64.deb
     - apt-get install -y ./quarto-linux-amd64.deb
   script:
     - quarto render
