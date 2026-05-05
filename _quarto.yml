@@ -4,7 +4,7 @@ project:
 website:
   title: "Satyajeet Bhonsale"
   description: "Postdoctoral Researcher | Bioprocess Modelling · Uncertainty Quantification · Scientific ML"
-  site-url: https://u0093798.pages.gitlab.kuleuven.be
+  site-url: https://satyajeetbhonsale.github.io
   
   navbar:
     left:
