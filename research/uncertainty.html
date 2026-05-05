@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>uncertainty – Satyajeet Bhonsale</title>
+<title>Uncertainty Quantification – Satyajeet Bhonsale</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,9 +92,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Satyajeet Bhonsale">
+<meta property="og:title" content="Uncertainty Quantification – Satyajeet Bhonsale">
 <meta property="og:description" content="Postdoctoral Researcher | Bioprocess Modelling · Uncertainty Quantification · Scientific ML">
+<meta property="og:image" content="https://satyajeetbhonsale.github.io/assets/UQ.png">
 <meta property="og:site_name" content="Satyajeet Bhonsale">
+<meta property="og:image:height" content="887">
+<meta property="og:image:width" content="1774">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -149,18 +171,68 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mitigate" id="toc-mitigate" class="nav-link active" data-scroll-target="#mitigate">Mitigate</a></li>
+  <li><a href="#quantify" id="toc-quantify" class="nav-link" data-scroll-target="#quantify">Quantify</a></li>
+  <li><a href="#propagate" id="toc-propagate" class="nav-link" data-scroll-target="#propagate">Propagate</a></li>
+  <li><a href="#decide" id="toc-decide" class="nav-link" data-scroll-target="#decide">Decide</a></li>
+  <li><a href="#relevant-publications" id="toc-relevant-publications" class="nav-link" data-scroll-target="#relevant-publications">Relevant Publications</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Uncertainty Quantification</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>under preparation</p>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>Pharmaceutical and bioprocess models are inherently uncertain: processes are often stochastic, parameters are estimated from noisy data, and the models themselves are approximations built on many assumptions. Ignoring this uncertainty leads to overconfident predictions and unreliable decisions. My research addresses uncertainty end-to-end — from reducing it experimentally, to quantifying and propagating it through models, to making decisions that explicitly account for it.</p>
+<p><img src="../assets/UQ.png" class="img-fluid" style="width:100.0%"></p>
+<section id="mitigate" class="level2">
+<h2 class="anchored" data-anchor-id="mitigate">Mitigate</h2>
+<p>Uncertainty can be reduced before it is a problem by designing experiments that are maximally informative. I develop <strong>model-based optimal experimental design (OED)</strong> methods that select sampling times, input trajectories, and measurement types to minimise parametric uncertainty in the resulting model. This is especially important in pharmaceutical and bioprocess applications where experiments are expensive.</p>
+</section>
+<section id="quantify" class="level2">
+<h2 class="anchored" data-anchor-id="quantify">Quantify</h2>
+<p>Once a model is built, I quantify how uncertain its parameters are using <strong>Bayesian parameter estimation</strong>, <strong>global sensitivity analysis (GSA)</strong>, and <strong>practical identifiability analysis</strong>. GSA tells us which parameters matter most; identifiability analysis tells us which can be estimated reliably from available data.</p>
+</section>
+<section id="propagate" class="level2">
+<h2 class="anchored" data-anchor-id="propagate">Propagate</h2>
+<p>Parametric uncertainty must be propagated through nonlinear models to obtain uncertain predictions. I use <strong>polynomial chaos expansions (PCE)</strong> and <strong>Monte Carlo</strong> methods, benchmarking their efficiency and accuracy across different process models — from population balance models for milling to kinetic models for fermentation.</p>
+</section>
+<section id="decide" class="level2">
+<h2 class="anchored" data-anchor-id="decide">Decide</h2>
+<p>Ultimately, uncertainty must inform decisions. I develop <strong>robust optimisation</strong>, <strong>chance-constrained optimisation</strong>, and <strong>risk-averse model predictive control (MPC)</strong> strategies that account for model uncertainty when computing optimal operating conditions or control actions.</p>
+<hr>
+</section>
+<section id="relevant-publications" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-publications">Relevant Publications</h2>
+<div id="refs" role="list">
+
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
