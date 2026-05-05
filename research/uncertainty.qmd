@@ -3,15 +3,14 @@ title: "Uncertainty Quantification"
 bibliography: ../references.bib
 csl: ../apa.csl
 nocite: |
-  @bhonsale2018analysis,
-  @nimmegeers2020optimal,
-  @bhonsale2020assessment,
-  @bhonsale2019global,
-  @bhonsale2021dynamic,
-  @mores2022multi,
-  @bhonsale2022risk,
-  @bhonsale2022optimal,
-  @quillo2025hybrid
+  @bhonsaleanbalance,
+  @nimmegeersoptimalapproach,
+  @bhonsale2020assessmentmills,
+  @bhonsale2019globalprocess,
+  @bhonsaledynamicuncertainty,
+  @moresmultiobjectivealgorithm,
+  @bhonsaleoptimalprocesses,
+  @quillo2025hybriddevelopment
 ---
 
 Pharmaceutical and bioprocess models are inherently uncertain: processes are often
@@ -51,8 +50,6 @@ Ultimately, uncertainty must inform decisions. I develop **robust optimisation**
 **chance-constrained optimisation**, and **risk-averse model predictive control (MPC)**
 strategies that account for model uncertainty when computing optimal operating
 conditions or control actions.
-
----
 
 ## Relevant Publications
 

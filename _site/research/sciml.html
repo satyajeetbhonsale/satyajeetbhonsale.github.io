@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>sciml – Satyajeet Bhonsale</title>
+<title>Scientific Machine Learning – Satyajeet Bhonsale</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,9 +93,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Satyajeet Bhonsale">
+<meta property="og:title" content="Scientific Machine Learning – Satyajeet Bhonsale">
 <meta property="og:description" content="Postdoctoral Researcher | Bioprocess Modelling · Uncertainty Quantification · Scientific ML">
+<meta property="og:image" content="https://satyajeetbhonsale.github.io/assets/sciml.png">
 <meta property="og:site_name" content="Satyajeet Bhonsale">
+<meta property="og:image:height" content="921">
+<meta property="og:image:width" content="1707">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -149,18 +172,65 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#approaches" id="toc-approaches" class="nav-link active" data-scroll-target="#approaches">Approaches</a></li>
+  <li><a href="#relevant-publications" id="toc-relevant-publications" class="nav-link" data-scroll-target="#relevant-publications">Relevant Publications</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Scientific Machine Learning</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>under preparation</p>
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<p>Pure mechanistic models require complete knowledge of the underlying biology and chemistry. But we rarely have complete knowledge. Pure data-driven models are flexible but opaque, data-hungry, and unreliable outside their training range. My research develops a third path: <strong>hybrid SciML frameworks</strong> that embed mechanistic structure within flexible learning architectures, combining the interpretability of first principles with the adaptability of machine learning.</p>
+<p>The long-term goal is a comprehensive, end-to-end computational framework for making <strong>reliable, uncertainty-aware decisions</strong> using hybrid models: from model building and identification, through uncertainty quantification, to robust optimisation and control.</p>
+<p><img src="../assets/sciml.png" class="img-fluid" style="width:100.0%"></p>
+<section id="approaches" class="level2">
+<h2 class="anchored" data-anchor-id="approaches">Approaches</h2>
+<p><strong>Neural ODEs</strong><br>
+Unknown or poorly characterised kinetic terms in mechanistic ODE systems are replaced by neural networks. The combined system is trained end-to-end, preserving the differential equation structure while learning what first principles cannot specify.</p>
+<p><strong>Universal Differential Equations (UDE)</strong><br>
+A generalisation of neural ODEs where arbitrary learnable functions — not just neural networks — are embedded within differential equations. This allows domain knowledge to constrain the hypothesis space while data fills in the gaps.</p>
+<p><strong>SINDy (Sparse Identification of Nonlinear Dynamics)</strong><br>
+Rather than assuming a fixed model structure, SINDy discovers governing equations directly from data by solving a sparse regression problem over a library of candidate terms. The result is a compact, interpretable equation rather than a black-box network. We have applied this to continuous direct compression processes with inherent delays, combined with Bayesian inference for uncertainty quantification.</p>
+<p><strong>Gaussian Process Hybrids</strong><br>
+Mechanistic models are augmented with Gaussian process correction terms that learn systematic model-plant mismatch from data. Because GPs are probabilistic, this naturally propagates uncertainty through to predictions and control decisions.</p>
+</section>
+<section id="relevant-publications" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-publications">Relevant Publications</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-lapiedracarrasquermodelinginference" class="csl-entry" role="listitem">
+Lapiedra Carrasquer, P., Muñoz López, C., Dockx, K., Van Impe, J., &amp; Bhonsale, S. (2026). Modeling continuous direct compression processes with inherent delay using SINDYc and bayesian inference. <em>Computers &amp; Chemical Engineering</em>, (109646). <a href="https://doi.org/10.1016/j.compchemeng.2026.109646">https://doi.org/10.1016/j.compchemeng.2026.109646</a>
+</div>
+<div id="ref-quillo2025hybriddevelopment" class="csl-entry" role="listitem">
+Quillo, G., Bhonsale, S., Collas, A., Van Impe, J., &amp; Xiouras, C. (2025). Hybrid semi-mechanistic and machine learning solubility regression modeling for crystallization process development. <em>CRYSTAL GROWTH &amp; DESIGN</em>, <em>25</em>(4), 1111–1127. <a href="https://doi.org/10.1021/acs.cgd.4c01451">https://doi.org/10.1021/acs.cgd.4c01451</a>
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
