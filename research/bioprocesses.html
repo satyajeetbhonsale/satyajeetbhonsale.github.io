@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>bioprocesses – Satyajeet Bhonsale</title>
+<title>Bioprocess Modelling – Satyajeet Bhonsale</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,8 +93,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Satyajeet Bhonsale">
+<meta property="og:title" content="Bioprocess Modelling – Satyajeet Bhonsale">
+<meta property="og:description" content="Postdoctoral Researcher | Bioprocess Modelling · Uncertainty Quantification · Scientific ML">
+<meta property="og:image" content="https://satyajeetbhonsale.github.io/assets/bio.png">
 <meta property="og:site_name" content="Satyajeet Bhonsale">
+<meta property="og:image:height" content="345">
+<meta property="og:image:width" content="1535">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -148,17 +172,93 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#gene-metabolic-networks" id="toc-gene-metabolic-networks" class="nav-link active" data-scroll-target="#gene-metabolic-networks">Gene &amp; Metabolic Networks</a></li>
+  <li><a href="#cell-population-models" id="toc-cell-population-models" class="nav-link" data-scroll-target="#cell-population-models">Cell &amp; Population Models</a></li>
+  <li><a href="#bioreactor-scale" id="toc-bioreactor-scale" class="nav-link" data-scroll-target="#bioreactor-scale">Bioreactor Scale</a></li>
+  <li><a href="#process-decision-making" id="toc-process-decision-making" class="nav-link" data-scroll-target="#process-decision-making">Process Decision Making</a></li>
+  <li><a href="#relevant-publications" id="toc-relevant-publications" class="nav-link" data-scroll-target="#relevant-publications">Relevant Publications</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Bioprocess Modelling</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<p>Bioprocesses span multiple scales — from gene regulatory networks and metabolic pathways inside individual cells, to populations of interacting microorganisms, to industrial bioreactors operating over hours and days. High-fidelity models at each scale are often too complex to use directly for optimisation or control. My research develops <strong>reduced, computationally tractable models</strong> that retain the essential mechanistic structure of the underlying biology while being practical tools for decision-making.</p>
+<p><img src="../assets/bio.png" class="img-fluid" style="width:100.0%"></p>
+<section id="gene-metabolic-networks" class="level2">
+<h2 class="anchored" data-anchor-id="gene-metabolic-networks">Gene &amp; Metabolic Networks</h2>
+<p>At the smallest scale, I work with <strong>metabolic reaction networks</strong> and <strong>gene circuit models</strong>. Genome-scale metabolic networks are far too large for dynamic optimisation — I develop systematic reduction methods based on extreme pathway enumeration and elementary flux modes to obtain compact networks that preserve the essential metabolic capabilities of the organism. At the gene circuit level, I model how synthetic gene circuits and optogenetic inputs interact with host cell metabolism, laying the foundation for the μ4C project on cybergenetic control of bioprocesses.</p>
+</section>
+<section id="cell-population-models" class="level2">
+<h2 class="anchored" data-anchor-id="cell-population-models">Cell &amp; Population Models</h2>
+<p>At the cell and population scale, I work with <strong>individual-based models (IbMs)</strong> and <strong>cybernetic models</strong> that capture how microbial communities behave as a collective. IbMs simulate each cell individually, resolving spatial structure and social interactions such as signalling and competition. Because IbMs are computationally expensive, I develop biology-driven complexity reduction strategies — identifying which interactions drive emergent community behaviour and which can be safely neglected.</p>
+</section>
+<section id="bioreactor-scale" class="level2">
+<h2 class="anchored" data-anchor-id="bioreactor-scale">Bioreactor Scale</h2>
+<p>At the reactor scale, I build <strong>kinetic models</strong> based on mass and energy balances that describe how cell growth, substrate consumption, and product formation evolve over time. These models are the workhorses of bioprocess optimisation — compact enough to simulate in milliseconds, yet mechanistically grounded enough to extrapolate beyond training conditions. I have applied these to beer fermentation, algae cultivation, and small-scale biorefineries.</p>
+</section>
+<section id="process-decision-making" class="level2">
+<h2 class="anchored" data-anchor-id="process-decision-making">Process Decision Making</h2>
+<p>Reduced models are only useful if they can support reliable decisions. I close the loop by connecting bioprocess models to <strong>dynamic optimisation</strong>, <strong>model predictive control (MPC)</strong>, and <strong>multi-objective optimisation under uncertainty</strong>. This includes risk-averse strategies that account for parametric uncertainty when computing optimal feeding trajectories or control actions — ensuring that decisions remain robust even when the model is imperfect.</p>
+</section>
+<section id="relevant-publications" class="level2">
+<h2 class="anchored" data-anchor-id="relevant-publications">Relevant Publications</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-wang2026signalinganalysis" class="csl-entry" role="listitem">
+Wang, J., Hashem, I., Bhonsale, S., &amp; Van Impe, J. (2026). Signaling dynamics in microbial communities: A reduced-complexity mathematical analysis. <em>Chemical Engineering Science</em>, <em>319</em>(1). <a href="https://doi.org/10.1016/j.ces.2025.121962">https://doi.org/10.1016/j.ces.2025.121962</a>
+</div>
+<div id="ref-mores2025acceleratedtest" class="csl-entry" role="listitem">
+Mores, W., Bhonsale, S., Logist, F., &amp; Van Impe, J. (2025). Accelerated enumeration of extreme rays through a positive-definite elementarity test. <em>BIOINFORMATICS</em>, <em>41</em>(1). <a href="https://doi.org/10.1093/bioinformatics/btae723">https://doi.org/10.1093/bioinformatics/btae723</a>
+</div>
+<div id="ref-wang2025individualbasedcommunities" class="csl-entry" role="listitem">
+Wang, J., Hashem, I., Bhonsale, S., &amp; Van Impe, J. (2025). Individual-based modeling unravels spatial and social interactions in bacterial communities. <em>ISME JOURNAL</em>, <em>19</em>(1). <a href="https://doi.org/10.1093/ismejo/wraf116">https://doi.org/10.1093/ismejo/wraf116</a>
+</div>
+<div id="ref-wang2025individualbasedguideline" class="csl-entry" role="listitem">
+Wang, J., Hashem, I., Bhonsale, S., Verheyen, D., Luo, H., &amp; Van Impe, J. (2025). Individual-based modelling (IbM) in food microbiology: A comprehensive guideline. <em>FOOD RESEARCH INTERNATIONAL</em>, <em>213</em>(ARTN 116408). <a href="https://doi.org/10.1016/j.foodres.2025.116408">https://doi.org/10.1016/j.foodres.2025.116408</a>
+</div>
+<div id="ref-debuck2023criticalbiorefineries" class="csl-entry" role="listitem">
+De Buck, V., Sbarciog, M., Cras, J., Bhonsale, S., Polanska, M., &amp; Van Impe, J. (2023). Critical analysis of the use of white-box versus black-box models for multi-objective optimisation of small-scale biorefineries. <em>Frontiers in Food Science and Technology</em>, <em>3</em>(1154305). <a href="https://doi.org/10.3389/frfst.2023.1154305">https://doi.org/10.3389/frfst.2023.1154305</a>
+</div>
+<div id="ref-moresmultiobjectivealgorithm" class="csl-entry" role="listitem">
+Mores, W., Nimmegeers, P., Hashem, I., Bhonsale, S., &amp; Van Impe, J. (2022). Multi-objective optimization under parametric uncertainty: A pareto ellipsoids-based algorithm. <em>Computers &amp; Chemical Engineering</em>, <em>169</em>(108099). <a href="https://doi.org/10.1016/j.compchemeng.2022.108099">https://doi.org/10.1016/j.compchemeng.2022.108099</a>
+</div>
+<div id="ref-sbarciog2022designmodel" class="csl-entry" role="listitem">
+Sbarciog, M., De Buck, V., Akkermans, S., Bhonsale, S., Polanska, M., &amp; Van Impe, J. (2022). Design, implementation and simulation of a small-scale biorefinery model. <em>Processes</em>, <em>10</em>(5). <a href="https://doi.org/10.3390/pr10050829">https://doi.org/10.3390/pr10050829</a>
+</div>
+<div id="ref-bhonsaledynamicuncertainty" class="csl-entry" role="listitem">
+Bhonsale, S., Mores, W., &amp; Van Impe, J. (2021). Dynamic optimisation of beer fermentation under parametric uncertainty. <em>Fermentation-Basel</em>, <em>7</em>(4). <a href="https://doi.org/10.3390/fermentation7040285">https://doi.org/10.3390/fermentation7040285</a>
+</div>
+<div id="ref-nimmegeersmetabolicbioprocesses" class="csl-entry" role="listitem">
+Nimmegeers, P., Vercammen, D., Bhonsale, S., Logist, F., &amp; Van Impe, J. (2021). Metabolic reaction network-based model predictive control of bioprocesses. <em>Applied Sciences-Basel</em>, <em>11</em>(20). <a href="https://doi.org/10.3390/app11209532">https://doi.org/10.3390/app11209532</a>
+</div>
+</div>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
