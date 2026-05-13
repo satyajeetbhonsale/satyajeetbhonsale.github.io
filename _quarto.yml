@@ -40,6 +40,7 @@ format:
       - cosmo
     css: styles.css
     toc: true
+    include-before-body: analytics.html
 
 bibliography: references.bib
 csl: apa.csl
