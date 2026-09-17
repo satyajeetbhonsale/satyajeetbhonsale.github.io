@@ -3,15 +3,16 @@ title: "Uncertainty Quantification"
 bibliography: ../references.bib
 csl: ../apa.csl
 nocite: |
-  @bhonsaleanbalance,
   @nimmegeersoptimalapproach,
-  @bhonsale2020assessmentmills,
-  @bhonsale2019globalprocess,
-  @bhonsaledynamicuncertainty,
+  @Bhonsale2020,
+  @Bhonsale2019,
+  @Bhonsale2022a,
+  @Bhonsale2021,
   @moresmultiobjectivealgorithm,
-  @bhonsaleoptimalprocesses,
+  @quillo2023iterativesolubility
   @quillo2025hybriddevelopment
   @Galleguillos2026
+  @Bhonsale2018
 ---
 
 Pharmaceutical and bioprocess models are inherently uncertain: processes are often
