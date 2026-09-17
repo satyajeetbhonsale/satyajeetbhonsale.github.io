@@ -13,6 +13,7 @@ nocite: |
   @debuck2023criticalbiorefineries,
   @sbarciog2022designmodel
   @Mores2026
+  @Galleguillos2026
 ---
 
 Bioprocesses span multiple scales — from gene regulatory networks and metabolic

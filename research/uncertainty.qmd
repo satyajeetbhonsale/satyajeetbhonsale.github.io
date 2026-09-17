@@ -11,6 +11,7 @@ nocite: |
   @moresmultiobjectivealgorithm,
   @bhonsaleoptimalprocesses,
   @quillo2025hybriddevelopment
+  @Galleguillos2026
 ---
 
 Pharmaceutical and bioprocess models are inherently uncertain: processes are often
